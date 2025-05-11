@@ -9,9 +9,6 @@ bad <- i[is.na(i)]
 
 idf <- dataRead[,1, drop = FALSE]
 binded <- cbind(idf,j, k)
-#cleanidf <- idf[complete.cases(idf), , drop = FALSE]
-#cleanj <- j[complete.cases(j), , drop = FALSE]
-
 
 subs <- binded[binded$Ozone>31 & binded$Temp>90, ,drop = FALSE]
 
